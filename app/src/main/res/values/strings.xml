@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name" translatable="false">NORA</string>
+	<!-- Used by multiple files -->
+	<string name="app_is_ignored" translatable="false">%s is ignored</string>
+	<string name="app_is_not_ignored" translatable="false">%s is not ignored</string>
+	<string name="service_running" translatable="false">VN service is running</string>
+	<string name="service_suspended" translatable="false">VN service is suspended</string>
+	<!-- xml/preferences.xml -->
+	<string name="app_list">App List</string>
+	<string name="app_list_summary">List installed apps which can be ignored</string>
+	<string name="tts" translatable="false">Text-To-Speech</string>
+	<string name="tts_summary" translatable="false">Configure Text-To-Speech behavior</string>
+	<string name="tts_settings">TTS Settings</string>
+	<string name="tts_settings_summary" translatable="false">Open the Android Text-To-Speech settings</string>
+	<string name="tts_settings_summary_fail">Unable to find TTS settings! If it exists on your device (it should), please contact the developer.</string>
+	<string name="tts_message">TTS Message</string>
+	<string name="tts_message_summary">Customize which parts of notifications are spoken</string>
+	<string name="tts_message_dialog" translatable="false">#a = App title\n#t = Ticker\n#s = Subtext\n#c = Content title\n#m = Content message\n#i = Content info\n\nDefault:\n#a. #c. #m.\n\nOld default (v1.0.x):\n#a: #t</string>
+	<string name="tts_text_replace" translatable="false">TTS Text Replacement</string>
+	<string name="tts_text_replace_summary" translatable="false">Substitute text to be spoken, such as to fix pronunciation</string>
+	<string name="tts_text_replace_dialog" translatable="false">Substitute text to be spoken, allowing you to customize how Text-To-Speech pronounces words or replace text for any other reason.\n\nText to replace is case insensitive.</string>
+	<string name="tts_stream">TTS Audio Stream</string>
+	<string name="tts_stream_summary">Choose the audio stream that Text-To-Speech plays through</string>
+	<string name="tts_delay">TTS Delay</string>
+	<string name="tts_delay_summary">Delay TTS a set number of seconds after notification</string>
+	<string name="tts_delay_dialog_msg">Number of seconds to wait after notification before speaking.</string>
+	<string name="tts_repeat">TTS Repeat</string>
+	<string name="tts_repeat_summary">Continually repeat notifications over TTS until screen turns on</string>
+	<string name="tts_repeat_dialog_msg">Notifications are repeated at the defined interval until the screen is turned on. Notifications created while the screen is on are not repeated.\n\nValue is in minutes. Blank or 0 to disable.</string>
+	<string name="audio_focus" translatable="false">Pause/dim media</string>
+	<string name="audio_focus_summary" translatable="false">Request other media to pause/dim when speaking</string>
+	<string name="shake_to_silence" translatable="false">Shake-To-Silence</string>
+	<string name="shake_to_silence_summary" translatable="false">Adjust the sensitivity threshold of Shake-To-Silence</string>
+	<string name="shake_to_silence_dialog_msg" translatable="false">Lower values are more sensitive.\n\nDefault: 100\nBlank to disable.</string>
+	<string-array name="stream_name">
+		<item>Media</item>
+		<item>Notification</item>
+		<item>Voice</item>
+		<item>Ring</item>
+		<item>Alarm</item>
+	</string-array>
+	<string name="ignore_strings">Ignore Text</string>
+	<string name="ignore_strings_summary" translatable="false">Ignore notifications that contain certain text in the message</string>
+	<string name="ignore_strings_dialog_msg">Separate individual entries with a new line.</string>
+	<string name="ignore_empty" translatable="false">Ignore Empty</string>
+	<string name="ignore_empty_summary_on" translatable="false">Notifications without a message will not be spoken</string>
+	<string name="ignore_empty_summary_off" translatable="false">Notifications without a message will be spoken as \"Notification from [app name].\"</string>
+	<string name="ignore_repeat">Ignore Repeats</string>
+	<string name="ignore_repeat_summary">Ignore subsequent identical notifications within a set time</string>
+	<string name="ignore_repeat_dialog_msg">Set number of seconds that must pass since last notification before a repeat can be spoken.\nIgnored repeats reset the count and different notifications clear it.\nBlank = infinite.</string>
+	<string name="max_length" translatable="false">Maximum Message</string>
+	<string name="max_length_summary" translatable="false">Maximum message length to speak. Larger messages will be truncated.</string>
+	<string name="max_length_dialog_msg" translatable="false">Maximum message length to speak\nLarger messages will be truncated.</string>
+	<string name="device_state">Device States</string>
+	<string name="device_state_summary">Select whether to speak during certain device states</string>
+	<string name="device_state_dialog_title">Speak during these device states</string>
+	<string-array name="device_states">
+		<item>Screen Off</item>
+		<item>Screen On</item>
+		<item>Headset Off</item>
+		<item>Headset On</item>
+		<item>Silent/Vibrate</item>
+	</string-array>
+	<string name="quiet_start">Quiet Time Start</string>
+	<string name="quiet_start_summary">Don\'t speak after this time.\nLeave the same as end to disable.</string>
+	<string name="quiet_end">Quiet Time End</string>
+	<string name="quiet_end_summary">Don\'t speak before this time.\nLeave the same as start to disable.</string>
+	<string name="test_summary">Post a notification (delayed 5 seconds) to test current settings</string>
+	<string name="test_ignored">Voice Notify is ignored in App List.\nTest will run, but notification will not be spoken.</string>
+	<string name="notify_log_summary" translatable="false">List last 20 notifications.\nDisplays time, app name, message, and ignore reasons.</string>
+	<string name="support_summary" translatable="false">Donate, rate/comment, translations, source code, or contact the developer</string>
+	
+	<!-- TextReplacePreference.java -->
+	<string name="text_replace_error_duplicate" translatable="false">Duplicate! Will not be saved.</string>
+	
+	<!-- text_replace_row.xml -->
+	<string name="text_to_replace" translatable="false">Text to replace</string>
+	<string name="replacement_text" translatable="false">Replacement text</string>
+	
+	<!-- MainActivity.java and xml/preferences.xml -->
+	<string name="test">Test</string>
+	<string name="notify_log">Notification Log</string>
+	<string name="support">Support Voice Notify</string>
+	
+	<!-- MainActivity.java -->
+	<string name="service_disabled" translatable="false">VN service is disabled</string>
+	<string name="status_summary_notification_access_enabled" translatable="false">Open the Android notification access settings to disable VN</string>
+	<string name="status_summary_notification_access_disabled" translatable="false">Open the Android notification access settings to enable VN</string>
+	<string name="status_summary_suspended" translatable="false">Select to activate VN.</string>
+	<string name="notification_channel_desc" translatable="false">Used for test notification</string>
+	<string name="test_ticker" translatable="false">This is the ticker message</string>
+	<string name="test_subtext" translatable="false">The Subtext</string>
+	<string name="test_content_title" translatable="false">Content Title</string>
+	<string name="test_content_text" translatable="false">This is the content message.</string>
+	<string name="test_content_info" translatable="false">Content Info</string>
+	<string name="donate" translatable="false">Donate</string>
+	<string-array name="support_items">
+		<item>@string/donate</item>
+		<item>Rate/Comment</item>
+		<item>Contact Developer</item>
+		<item>Translations</item>
+		<item>Source Code</item>
+	</string-array>
+	<string-array name="donate_services">
+		<item>Google Wallet</item>
+		<item>PayPal</item>
+	</string-array>
+	<string name="donate_wallet_title" translatable="false">Donate - Google Wallet</string>
+	<string name="donate_wallet_message" translatable="false">If you are in the United States and would like to donate via Google Wallet, simply use the Send Money feature and address it to pilota51@gmail.com.\nUnfortunately, Send Money is not available outside the US.\n\nThank you for using and supporting Voice Notify!</string>
+	<string name="donate_wallet_launch_app" translatable="false">Launch Wallet App</string>
+	<string name="donate_wallet_launch_web" translatable="false">Open Wallet Website</string>
+	<string name="error_market" translatable="false">Error: Unable to find Google Play Store installed.</string>
+	<string name="error_email">Error: Unable to find an installed email app.</string>
+	<string name="tts_message_reset_default" translatable="false">TTS Message setting updated to new default value</string>
+	
+	<!-- Service.java -->
+	<string name="notification_from" translatable="false">Notification from %s.</string>
+	<string name="error_tts_init" translatable="false">Error: Could not initialize TTS!</string>
+	
+	<!-- NotifyList.java -->
+	<string name="yes" translatable="false">Yes</string>
+	<string name="ignore_app" translatable="false">Ignore %s?</string>
+	<string name="unignore_app" translatable="false">Unignore %s?</string>
+	
+	<!-- menu/app_list.xml-->
+	<string name="ignore_all">Ignore All</string>
+	<string name="ignore_none">Ignore None</string>
+	<string name="filter" translatable="false">Filter</string>
+	
+	<!-- Ignore/Silence reasons -->
+	<string name="reason_app" translatable="false">Ignored app</string>
+	<string name="reason_string" translatable="false">Ignored text</string>
+	<string name="reason_empty_msg" translatable="false">Empty message</string>
+	<string name="reason_identical" translatable="false">Identical message within {0,choice,-1#infinite seconds|1#{0} second|1&lt;{0} seconds}</string>
+	<string name="reason_quiet" translatable="false">Quiet time</string>
+	<string name="reason_silent" translatable="false">Silent or vibrate mode</string>
+	<string name="reason_call" translatable="false">Active phone call</string>
+	<string name="reason_screen_off" translatable="false">Screen off</string>
+	<string name="reason_screen_on" translatable="false">Screen on</string>
+	<string name="reason_headset_off" translatable="false">Headset off</string>
+	<string name="reason_headset_on" translatable="false">Headset on</string>
+	<string name="reason_shake" translatable="false">Silenced by shake</string>
+	<string name="reason_suspended" translatable="false">VN suspended by widget</string>
+	<string name="reason_service_stopped" translatable="false">Service stopped</string>
+</resources>

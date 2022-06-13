@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.norab"
+          android:installLocation="internalOnly">
+	<uses-permission android:name="android.permission.BLUETOOTH" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-feature
+		android:name="android.hardware.touchscreen"
+		android:required="false" />
+	<uses-feature
+		android:name="android.hardware.bluetooth"
+		android:required="false" />
+	<application
+		android:icon="@drawable/icon"
+		android:label="NORAB"
+		android:theme="@style/AppTheme">
+		<activity android:name=".MainActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".AppListActivity"
+			android:configChanges="keyboardHidden|orientation">
+		</activity>
+		<service
+			android:name=".Service"
+			android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+			<intent-filter>
+				<action android:name="android.service.notification.NotificationListenerService" />
+			</intent-filter>
+		</service>
+		<receiver android:name=".WidgetProvider">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+				<action android:name="voicenotify.widget.TOGGLE" />
+				<action android:name="voicenotify.widget.UPDATE" />
+			</intent-filter>
+			<meta-data
+				android:name="android.appwidget.provider"
+				android:resource="@xml/appwidget_info" />
+		</receiver>
+	</application>
+</manifest>
