@@ -369,7 +369,7 @@ public class MainActivity extends PreferenceActivity {
 											startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://getlocalization.com/norab")));
 											break;
 										case 4: // Source Code
-											startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/143aashish?tab=projects")));
+											startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/Aashish-J-Yadav/Norab.git")));
 											break;
 									}
 								}
